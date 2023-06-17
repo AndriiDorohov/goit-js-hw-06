@@ -89,9 +89,9 @@ console.log(getUsersWithAge(users, 20, 30)); // [ Ross Vazquez object, Elma Head
 
 console.log(getUsersWithAge(users, 30, 40));
 // [Moore Hensley object, Sharlene Bush object, Blackburn Dotson object, Sheree Anthony object]
-``
+```
 
-# Task 7
+# Task 7 
 
 Get the total balance amount (the 'balance` field) of all users.
 
