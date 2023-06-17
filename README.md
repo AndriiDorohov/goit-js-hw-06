@@ -1,146 +1,144 @@
-**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+# Admission criteria
 
-# Критерии приема
+- The repository `goit-js-hw-06` has been created
+- When submitting homework, there is a link to the source files in the repository
+- All tasks are performed in a single file, into which the array is imported
+  users.
+- The names of variables and functions are clear, descriptive
+- The code is formatted with Prettier
 
-- Создан репозиторий `goit-js-hw-06`
-- При сдаче домашней работы есть ссылка на исходные файлы в репозитории
-- Все задания выполнены в одном файле, в который импортируется массив
-  пользователей.
-- Имена переменных и функций понятные, описательные
-- Код отформатирован с помощью Prettier
+# TK
 
-# ТЗ
+Write functions that use iterating array methods (no `for`,
+`splice', etc.) perform the following operations on an array
+of user objects from a file [users.js ](./users.js ).
 
-Напиши функции которые с помощью перебирающих методов массива (никаких `for`,
-`splice` и т. д.) выполняют следующие операции над массивом объектов
-пользователей из файла [users.js](./users.js).
+# Task 1
 
-# Задание 1
-
-Получить массив имен всех пользователей (поле `name`).
+Get an array of names of all users (the `name` field).
 
 ```js
 const getUserNames = users => {
-  // твой код
+  // your code
 };
 
 console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 ```
 
-# Задание 2
+# Task 2
 
-Получить массив объектов пользователей по цвету глаз (поле `eyeColor`).
+Get an array of user objects by eye color (the `eyeColor` field).
 
 ```js
 const getUsersWithEyeColor = (users, color) => {
-  // твой код
+  // your code
 };
 
-console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+console.log(getUsersWithEyeColor(users, 'blue')); // [Moore Hensley object, Sharlene Bush object, Carey Barr object]
 ```
 
-# Задание 3
+# Task 3
 
-Получить массив имен пользователей по полу (поле `gender`).
+Get an array of user names by gender (the `gender` field).
 
 ```js
 const getUsersWithGender = (users, gender) => {
-  // твой код
+  // your code
 };
 
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 ```
 
-# Задание 4
+# Task 4
 
-Получить массив только неактивных пользователей (поле `isActive`).
+Get an array of inactive users only (the `isActive` field).
 
 ```js
 const getInactiveUsers = users => {
-  // твой код
+  // your code
 };
 
-console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+console.log(getInactiveUsers(users)); // [Moore Hensley object, Ross Vazquez object, Blackburn Dotson object]
 ```
 
-# Задание 5
+# Task 5
 
-Получить пользоваля (не массив) по `email` (поле `email`, он уникальный).
+Get the user (not an array) by `email` (the `email` field, it is unique).
 
 ```js
 const getUserWithEmail = (users, email) => {
-  // твой код
+  // your code
 };
 
-console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
-console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com ')); // {user object Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com ')); // {Elma Head user object}
 ```
 
-# Задание 6
+# Task 6
 
-Получить массив пользователей попадающих в возрастную категорию от `min` до
-`max` лет (поле `age`).
+Get an array of users falling into the age category from `min` to
+`max` years (field `age').
 
 ```js
 const getUsersWithAge = (users, min, max) => {
-  // твой код
+  // your code
 };
 
-console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
+console.log(getUsersWithAge(users, 20, 30)); // [ Ross Vazquez object, Elma Head object, Carey Barr object]
 
 console.log(getUsersWithAge(users, 30, 40));
-// [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
-```
+// [Moore Hensley object, Sharlene Bush object, Blackburn Dotson object, Sheree Anthony object]
+``
 
-# Задание 7
+# Task 7
 
-Получить общую сумму баланса (поле `balance`) всех пользователей.
+Get the total balance amount (the 'balance` field) of all users.
 
 ```js
 const calculateTotalBalance = users => {
-  // твой код
+  // your code
 };
 
 console.log(calculateTotalBalance(users)); // 20916
 ```
 
-# Задание 8
+# Task 8
 
-Массив имен всех пользователей у которых есть друг с указанным именем.
+Array of names of all users who have a friend with the specified name.
 
 ```js
 const getUsersWithFriend = (users, friendName) => {
-  // твой код
+  // your code
 };
 
 console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
 ```
 
-# Задание 9
+# Task 9
 
-Массив имен (поле `name`) людей, отсортированных в зависимости от количества их
-друзей (поле `friends`)
+Array of names (field `name') of people sorted according to the number of their
+friends (field `friends')
 
 ```js
 const getNamesSortedByFriendsCount = users => {
-  // твой код
+  // your code
 };
 
 console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 ```
 
-# Задание 10
+# Task 10
 
-Получить массив всех умений всех пользователей (поле `skills`), при этом не
-должно быть повторяющихся умений и они должны быть отсортированы в алфавитном
-порядке.
+Get an array of all the skills of all users (the `skills` field), while not
+there should be repetitive skills and they should be sorted
+alphabetically.
 
 ```js
 const getSortedUniqueSkills = users => {
-  // твой код
+  // your code
 };
 
 console.log(getSortedUniqueSkills(users));
